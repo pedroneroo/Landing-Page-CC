@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Responsividade para celulares (largura menor ou igual a 600px) */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo {
+        height: 60px; 
+    }
+
+    ul {
+        flex-direction: column; 
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+        font-size: 14px; /* Diminui o tamanho da fonte */
+    }
+
+    h1, h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do texto */
+        margin: 10px; /* Ajusta o espaçamento */
+    }
+
+    .container {
+        flex-direction: column; /* Organiza os elementos em coluna */
+    }
+
+    a {
+        margin: 0; /* Centraliza o botão */
+        width: 90%; /* Ajusta o tamanho do botão */
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        border-radius: 0;
+    }
+
+    #relogiocont {
+        width: 300px; /* Reduz o tamanho do contêiner do relógio */
+        height: 300px;
+        margin: 20px auto; /* Centraliza */
+    }
+
+    #relogio {
+        width: 300px; /* Reduz o tamanho da imagem do relógio */
+    }
+
+    footer img {
+        width: 12px; /* Ajusta o tamanho do ícone no rodapé */
+    }
+}
+
+/* Responsividade para tablets (largura entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        height: auto;
+        padding: 15px;
+    }
+
+    #logo {
+        height: 80px; 
+    }
+
+    ul {
+        flex-direction: row; 
+        padding: 5px;
+    }
+
+    li {
+        margin: 0 10px; 
+        font-size: 16px; 
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; 
+        margin: 15px;
+    }
+
+    a {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%; 
+        font-size: 15px; 
+    }
+
+    #relogiocont {
+        flex: 1;
+        width: 350px; 
+        height: 350px;
+    }
+
+    #relogio {
+        width: 350px; 
+    }
+
+    footer {
+        position: au; 
+        margin-top: auto;
+        padding: 10px 0; 
+        text-align: center; 
+        background-color: #0f1523; 
+    }
+
+    footer img {
+        width: 14px;
+    }
+}
